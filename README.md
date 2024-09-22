@@ -8,7 +8,7 @@
    - On a successful response, it updates the relevant HTML elements with the weather information, including temperature, humidity, wind speed, and more.
    - If the fetch fails, it logs an error message to the console.
 
-   
+   ```javascript
    function fetchWeather(location) {
        const url = `${apiUrl}?q=${location}&appid=${apiKey}&units=metric`;
        
@@ -38,7 +38,7 @@
            });
    }
 
-
+```
 ### Function: getCountryName
 
 This function takes a country code as input and returns the corresponding country name. If the country code is not found in the predefined mapping, it returns "Unknown Country."
