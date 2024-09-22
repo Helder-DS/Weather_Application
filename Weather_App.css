@@ -1,0 +1,467 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(4, 32, 63);
+    height: 100%;
+        width: 100%;
+}
+
+.container{
+    width: 1400px;
+    height: 650px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.container {
+    background-image: url('./IMG/Weather1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; 
+    
+}
+
+
+.temperature, .location, .extra_info {
+    padding: 10px;
+}
+
+.box1 {
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px); 
+    width: 30%;
+    height: 100%;
+    padding: 20px;
+    color: black; 
+}
+
+.location_search{
+
+    width: 90%;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 25px;
+    justify-content: center;
+    display: flex;
+}
+
+#location_box{
+    height: 100%;
+    width: 80%;
+    font-family:sans-serif;
+    font-size: 25px;
+    background-color: transparent;
+    border-color: white;
+    color: white; 
+    border: none;             
+    border-bottom: 2px solid white; 
+    outline: none; 
+    
+}
+
+
+#location_box::placeholder {
+    color: rgb(248, 243, 243); 
+    opacity: 1; 
+}
+
+#search_button {
+    width: 20%;
+    height: 100%;
+    margin-left: 5px;
+    background-color: transparent;
+    border: none; 
+    border-bottom: 2px solid white; 
+    color: white;
+    transition: background-color 0.3s ease; 
+}
+
+
+#search_button:hover {
+    background: rgba(255, 255, 255, 0.1); 
+    cursor: pointer; 
+}
+
+.London{
+    width: 90%;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 25px;
+    font-size: 20px;
+    color: white;
+    font-family:sans-serif;
+    transition: background-color 0.3s ease; 
+    padding-top: 5px;
+    padding-left: 5px;
+
+}
+
+.New_York{
+    width: 90%;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 25px;
+    font-family:sans-serif;
+    transition: background-color 0.3s ease; 
+    padding-top: 5px;
+    padding-left: 5px;
+    
+}
+
+.London:hover {
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer; 
+}
+
+.New_York:hover {
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer; 
+}
+
+.Belfast:hover {
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer; 
+}
+
+.Paris:hover {
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer; 
+}
+
+.Madrid:hover {
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer; 
+}
+
+.Barcelona:hover {
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer; 
+}
+
+.Belfast{
+    width: 90%;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 25px;
+    font-family:sans-serif;
+    transition: background-color 0.3s ease; 
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.Barcelona{
+    width: 90%;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 25px;
+    font-family:sans-serif;
+    transition: background-color 0.3s ease; 
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.Madrid{
+    width: 90%;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 25px;
+    font-family:sans-serif;
+    transition: background-color 0.3s ease; 
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.Paris{
+    width: 90%;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 25px;
+    font-family:sans-serif;
+    transition: background-color 0.3s ease; 
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.p_locations{
+    height: 30px;
+    font-size: 20px;
+    color: white;
+
+}
+
+/*-----------------------*/
+
+.box2{
+    width: 70%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.information{
+    width: 100%;
+    height: 200px;
+    margin-top: 450px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 10px
+   
+    
+}
+
+.temperature{
+    height: 100%;
+    width: 300px;
+
+ 
+    justify-content: center;
+  
+    
+}
+
+.location{
+    height: 100%;
+    width: 400px;
+
+    justify-content: center;
+    
+
+}
+
+
+.extra_info{
+    height: 100%;
+    width: 300px;
+    justify-content: center;
+  
+}
+
+
+#p_temperature{
+    font-size: 80px;
+    font-family:sans-serif;
+}
+
+#p_country{
+    font-size: 50px;
+    font-family:sans-serif;
+}
+
+#p_precipitation{
+    font-family:sans-serif;
+    font-size: 20px;
+
+    
+}
+#p_humidity{
+    font-family:sans-serif;
+    font-size: 20px;
+    
+}
+#p_wind{
+    font-family:sans-serif;
+    font-size: 20px;
+    
+}
+
+#p_location{
+    font-family:sans-serif;
+    font-size: 20px;
+}
+
+#p_day{
+    font-family:sans-serif;
+    font-size: 20px;
+}
+#p_time{
+    font-family:sans-serif;
+    font-size: 20px;
+}
+#p_extra_info{
+    font-family:sans-serif;
+    font-size: 20px;
+}
+
+#p_main_weather{
+    font-family:sans-serif;
+    font-size: 20px;
+}
+
+.t1{
+    width: 100%;
+    height: 78px;
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.t2{
+    margin-top: 5px;
+    width: 100%;
+    height: 20px;
+
+    align-items: center;
+    justify-content: center;
+   
+   
+}
+
+.t3{
+    margin-top: 5px;
+    width: 100%;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+   
+   
+}
+
+.t4{
+    margin-top: 5px;
+    width: 100%;
+    height: 20px;
+
+    align-items: center;
+    justify-content: center;
+   
+   
+}
+
+.l1{
+    width: 100%;
+    height: 78px;
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.l2{
+    margin-top: 5px;
+    width: 100%;
+    height: 20px;
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+}
+
+.l3{
+    margin-top: 5px;
+    width: 100%;
+    height: 20px;
+
+    align-items: center;
+    justify-content: center;  
+    margin-top: 10px;
+    display: flex;
+}
+
+.l4{
+    margin-top: 5px;
+    width: 100%;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    display: flex;
+}
+
+.e1{
+    width: 100%;
+    height: 78px;
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.e2{
+    margin-top: 5px;
+    width: 100%;
+    height: 20px;
+
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    display: flex;
+}
+
+.e3{
+    margin-top: 5px;
+    width: 100%;
+    height: 20px;
+
+    align-items: center;
+    justify-content: center;  
+    margin-top: 10px;
+    display: flex;
+}
+
+#p_humidity {
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+}
+
+#p_wind{
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+}
+
+#p_precipitation{
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+}
+
+.dev{
+    width: 90%;
+    height: 30px;
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 160px;
+    margin-left: 20px;
+    color: white;
+    font-family:sans-serif;
+}
+
+.name{
+    margin-left: 5px;
+    font-family:sans-serif;
+    border-radius: 5px;
+}
+
+/*---------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
