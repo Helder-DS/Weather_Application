@@ -1,4 +1,7 @@
+
+// API key for accessing the OpenWeatherMap API
 const apiKey = '40d4277e29ac4e7f9cc6236dce0eaf2f';
+// Base URL for the OpenWeatherMap API
 const apiUrl = 'https://api.openweathermap.org/data/2.5/weather';
 
 const location_input = document.getElementById('location_box');
@@ -51,6 +54,7 @@ barDiv.addEventListener('click', () => {
     fetchWeather('Barcelona');
 });
 
+// Fetch the weather data from the OpenWeatherMap API
 function fetchWeather(location) {
     const url = `${apiUrl}?q=${location}&appid=${apiKey}&units=metric`;
 
@@ -88,6 +92,8 @@ function fetchWeather(location) {
         });
 
 
+
+// Function to map a given country code to the full country name
 function getCountryName(countryCode) {
     const countryMap = {
         'US': 'United States',
@@ -109,8 +115,9 @@ function getCountryName(countryCode) {
         
     };
 
+    
     return countryMap[countryCode] || 'Unknown Country'; // Default to 'Unknown Country' if code not found 
-    }
+        }
 
 
 
