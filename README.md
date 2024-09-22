@@ -37,3 +37,34 @@
                console.error('Error fetching weather data:', error);
            });
    }
+
+
+
+### Function: getCountryName
+
+This function takes a country code as input and returns the corresponding country name. If the country code is not found in the predefined mapping, it returns "Unknown Country."
+
+```javascript
+function getCountryName(countryCode) {
+    const countryMap = {
+        'US': 'United States',
+        'GB': 'United Kingdom',
+        'IE': 'Ireland',
+        'FR': 'France',
+        'DE': 'Germany',
+        'IT': 'Italy',
+        'ES': 'Spain',
+        'AU': 'Australia',
+        'JP': 'Japan',
+        'CN': 'China',
+        'RU': 'Russia',
+        'BR': 'Brazil',
+        'CA': 'Canada',
+        'MX': 'Mexico',
+        'IN': 'India',
+        'ZA': 'South Africa',
+    };
+    
+    return countryMap[countryCode] || 'Unknown Country'; // Default to 'Unknown Country' if code not found 
+}
+
