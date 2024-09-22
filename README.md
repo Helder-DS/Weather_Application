@@ -39,7 +39,6 @@
    }
 
 
-
 ### Function: getCountryName
 
 This function takes a country code as input and returns the corresponding country name. If the country code is not found in the predefined mapping, it returns "Unknown Country."
@@ -66,5 +65,29 @@ function getCountryName(countryCode) {
     };
     
     return countryMap[countryCode] || 'Unknown Country'; // Default to 'Unknown Country' if code not found 
+}
+
+
+### Media Query
+
+This media query adjusts the styles for screens with a maximum width of 375px, ensuring the application is responsive on smaller devices.
+
+```css
+@media (max-width: 375px) {
+    .container {
+        width: 100%; 
+        height: 100%; 
+        flex-direction: column; 
+        justify-content: flex-start; 
+        align-items: center; 
+    }
+
+    #p_temperature {
+        font-size: 65px; /* Increases the font size for temperature display */
+    }
+
+    #p_country {
+        font-size: 45px; /* Adjusts font size for country name */
+    }
 }
 
