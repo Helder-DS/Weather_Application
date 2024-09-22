@@ -68,6 +68,25 @@ function getCountryName(countryCode) {
 }
 
 
+@media (max-width: 375px) {
+    .container {
+        width: 100%; 
+        height: 100%; 
+        flex-direction: column; 
+        justify-content: flex-start; 
+        align-items: center; 
+    }
+
+    #p_temperature {
+        font-size: 65px; /* Increases the font size for temperature display */
+    }
+
+    #p_country {
+        font-size: 45px; /* Adjusts font size for country name */
+    }
+}
+
+
 
 
 
