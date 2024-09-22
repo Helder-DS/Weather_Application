@@ -2,13 +2,13 @@
 
 ### JavaScript Functions
 
-1. **fetchWeather(location)**:
+**fetchWeather(location)**:
    - This function retrieves weather data from the OpenWeather API based on the given location.
    - It constructs the API URL using the specified location and API key, then fetches the data.
    - On a successful response, it updates the relevant HTML elements with the weather information, including temperature, humidity, wind speed, and more.
    - If the fetch fails, it logs an error message to the console.
 
-   ```javascript
+   
    function fetchWeather(location) {
        const url = `${apiUrl}?q=${location}&appid=${apiKey}&units=metric`;
        
@@ -67,7 +67,13 @@ function getCountryName(countryCode) {
     return countryMap[countryCode] || 'Unknown Country'; // Default to 'Unknown Country' if code not found 
 }
 
+```
 
+### Media Query: @media (max-width: 375px)
+
+This media query applies specific styles when the screen width is 375 pixels or less.
+
+```css
 @media (max-width: 375px) {
     .container {
         width: 100%; 
@@ -85,7 +91,6 @@ function getCountryName(countryCode) {
         font-size: 45px; /* Adjusts font size for country name */
     }
 }
-
 
 
 
