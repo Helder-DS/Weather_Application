@@ -67,8 +67,7 @@ function getCountryName(countryCode) {
     return countryMap[countryCode] || 'Unknown Country'; // Default to 'Unknown Country' if code not found 
 }
 
-
-### Example Media Query
+### Function: getCountryName
 
 This media query adjusts the styles for screens with a maximum width of 375px, ensuring the application is responsive on smaller devices.
 
